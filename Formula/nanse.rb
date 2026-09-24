@@ -8,17 +8,17 @@ class Nanse < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nanse-ai/nanse/releases/download/cli-v0.1.0/nanse-aarch64-apple-darwin"
+      url "https://github.com/nanse-ai/cli/releases/download/cli-v0.1.0/nanse-aarch64-apple-darwin"
       sha256 "b1715fbdb1c50e6143253f71bc7516f6a336aabde60f20a28fce279fa0be4522"
     else
-      url "https://github.com/nanse-ai/nanse/releases/download/cli-v0.1.0/nanse-x86_64-apple-darwin"
+      url "https://github.com/nanse-ai/cli/releases/download/cli-v0.1.0/nanse-x86_64-apple-darwin"
       sha256 "5b5e56824f06791c045a175c1ef079c070d4d32f24931e8e99715415f67d520d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nanse-ai/nanse/releases/download/cli-v0.1.0/nanse-x86_64-unknown-linux-gnu"
+      url "https://github.com/nanse-ai/cli/releases/download/cli-v0.1.0/nanse-x86_64-unknown-linux-gnu"
       sha256 "3ad2c6c9b22ed51a5ede53fa0868de15cf7fd417b5fa0f69fc22acb70f528f77"
     end
   end
