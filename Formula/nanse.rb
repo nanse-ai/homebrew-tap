@@ -3,23 +3,23 @@
 class Nanse < Formula
   desc "nanse local tool connector — run AI agent tools on your machine"
   homepage "https://nanse.ai"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nanse-ai/cli/releases/download/cli-v0.1.0/nanse-aarch64-apple-darwin"
-      sha256 "b1715fbdb1c50e6143253f71bc7516f6a336aabde60f20a28fce279fa0be4522"
+      url "https://github.com/nanse-ai/cli/releases/download/cli-v0.1.1/nanse-aarch64-apple-darwin"
+      sha256 "95816307f8dca569a67b07ecaee62c0656e918d84309631d71527a81e9a70b38"
     else
-      url "https://github.com/nanse-ai/cli/releases/download/cli-v0.1.0/nanse-x86_64-apple-darwin"
-      sha256 "5b5e56824f06791c045a175c1ef079c070d4d32f24931e8e99715415f67d520d"
+      url "https://github.com/nanse-ai/cli/releases/download/cli-v0.1.1/nanse-x86_64-apple-darwin"
+      sha256 "b4caaf8f7da60ddde89efb20f3449014846c10b0f1b5a86407a1ae2abdb068aa"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nanse-ai/cli/releases/download/cli-v0.1.0/nanse-x86_64-unknown-linux-gnu"
-      sha256 "3ad2c6c9b22ed51a5ede53fa0868de15cf7fd417b5fa0f69fc22acb70f528f77"
+      url "https://github.com/nanse-ai/cli/releases/download/cli-v0.1.1/nanse-x86_64-unknown-linux-gnu"
+      sha256 "0c0f9986ebd18a1bc99e4fa3fed88e547adef74c946bbc05a7e5f029a1e82646"
     end
   end
 
