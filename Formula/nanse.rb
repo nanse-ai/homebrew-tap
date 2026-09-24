@@ -24,7 +24,9 @@ class Nanse < Formula
   end
 
   def install
-    bin.install "nanse"
+    # The release asset is a bare binary named for its target triple, and Homebrew
+    # stages it under that name — so install it under the name users type.
+    bin.install Dir["nanse-*"].first => "nanse"
   end
 
   test do
